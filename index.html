@@ -1,61 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | J-Tech</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="navbar">
-        <div class="logo">Wisdom</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="dark-mode-toggle">🌙</button></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hi, I'm Wisdom</h1>
-            <h2>Frontend Developer</h2>
-            <p>High-level experience in web design and development, producing quality work.</p>
-            <a href="#contact" class="btn">Contact Me</a>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| Jerry Codes</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+
+        <div class="media-icons">
+          <a href="https://x.com/j_"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="hero-img">
-          <img src="images/my image.jpg" alt="J-Tech">
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="about-img">
+          <img src="images/my first website image.jpg" alt="Profile Image"></div>
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm J-Tech</div>
+          <div class="text-three">UI/UX Designer</div>
+          <div class="text-four">From Nigeria</div>
         </div>
-    </section>
-    
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I'm a 100 level student of Unizik, in the computer science department. <br>I am a passionate web developer with experience in creating modern, responsive websites.<br></p>
-    </section>
-    
-    <section id="services" class="services">
-        <h2>My Services</h2>
-        <div class="service-box">
-            <h3>Web Development</h3>
-            <p>Building responsive and high-quality websites.</p>
+        <div class="button">
+          <button><a href="http://wa.me/2349112903813">Hire me</a></button>
         </div>
-        <div class="service-box">
-            <h3>UI/UX Design</h3>
-            <p>Creating visually appealing and user-friendly designs.</p>
+      </div>
+    </section>
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="images/my second website image .jpg" alt="image description" />
+          </div>
+          <div class="right">
+            <div class="topic">Designing Is My Passion</div>
+            <p>
+              I’m a tech-driven creator passionate about Web3, self-development, and growth. 
+              With a background in coding, design, and content creation, I break down complex tech concepts into engaging and digestible content.
+              Whether it’s building in Web3, optimizing productivity, or sharing insights on personal growth, 
+              I bring a mix of value, creativity, and collaboration to the table.
+              On X, I talk about Web3 projects, programming, 
+              and tech insights—blending expertise with practical wisdom to help you level up. 
+              From self-improvement hacks to tech trends, my content is built to inform, inspire, and connect.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Get in touch for work or collaboration.</p>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nwaforchaebukawisdom@gmail.com" target="_blank">Send Email</a>
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+            <p>I specialize in Web Development, Design, and Content Creation, 
+              blending HTML, CSS, and JavaScript with a creative edge in UI/UX and branding. 
+              My passion for Web3 and blockchain keeps me at the forefront of innovation,
+              while my expertise in video editing, social media growth, and self-development strategies 
+              helps me create impactful, engaging content. </p>
+            <div class="experience">
+              <div class="num">5</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavScript</div>
+              <div class="per">70%</div>
+            </div>
+            <div class="box">
+              <div class="topic">PHP</div>
+              <div class="per">60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Web Devlopment</div>
+            <p>Proficient in HTML, CSS, and JavaScript, currently leveling up in full-stack and blockchain development.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Graphic Design</div>
+            <p>Experienced in UI/UX design, graphics creation, and crafting engaging content for Web3 projects and personal branding.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">Content Creation and growth</div>
+            <p>Skilled in creating viral, engaging content on Twitter, TikTok, and YouTube, with a focus on tech, self-development, and productivity.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Icon Design</div>
+            <p>I Craf modern and custom icon designs tailored for brands, applications, and digital products. 
+              Aesthetic, scalable, and designed for clarity and impact.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Video editing</div>
+            <p>I create engaging and informative content for Web2 and Web3 brands. 
+              Transforming ideas into compelling narratives that captivate and convert.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">Apps Devlopment</div>
+            <p>I build user-friendly and high-performance applications for both Web2 and Web3. 
+              I focus on making apps scalable, functional, and smooth for users.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          <p>Got an idea or a project in mind? Let’s bring it to life! Whether it’s Web2, Web3, UI/UX, or content creation, I’m here to help. 
+            Feel free to reach out, and let’s create something amazing together!</p>
+          <div class="button">
+            <button><a href="http://wa.me/2349112903813">Let's Chat</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">J-tech</a> | &#169; 2025 All Rights Reserved</span>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
